@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #e7e7e5;
+    color: #fff;
+    font-family: Avenir, Calibri, sans-serif;
+    overflow-x: hidden;
+}
+
+#bandung-map {
+    padding-top: 15px;
+    width: 60%;
+    height: 30%;
+}
+
+#bandung-map g {
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-left: -25px;
+}
+
+#bandung-map g:hover {
+    cursor: pointer;
+    margin-left: -25px;
+}
+
+.active,
+.active:hover {
+    fill: #bd6966 !important;
+    margin-left: -25px;
+}
+
+#kecamatanInfo {
+    margin-top: 100px;
+    position: absolute;
+    top: 3%;
+    right: 4%;
+    width: 32%;
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    opacity: 0;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+#kecamatanInfo.show {
+    opacity: 1;
+}
+
+#kecamatanInfo h1 {
+    background: #2e2e9e;
+    padding: .3rem;
+    padding-left: 1rem;
+    margin-top: -.5rem;
+    font-weight: 400;
+}
+
+#kecamatanInfo p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#kecamatanInfo img {
+    width: 100%;
+    max-height: 380px;
+}
+
+@media all and (max-width: 800px) {
+    #bandung-map {
+        margin-top: 10px;
+        width: 100%;
+        height: 40%;
+    }
+
+    #kecamatanInfo {
+        width: 70%;
+        position: static;
+        margin-left: 15%;
+        margin-top: 10px;
+    }
+
+    #kecamatanInfo.show p {
+        color: #fff !important;
+        margin-bottom: 2rem;
+        padding-bottom: 5%;
+    }
+
+    #kecamatanInfo h1 {
+        font-size: 26px;
+    }
+
+    #kecamatanInfo img {
+        width: 100%;
+        max-height: 320px;
+    }
+
+}
+
+@media all and (max-width: 650px) {
+    #bandung-map {
+        margin-top: 10px;
+        width: 100%;
+        height: 40%;
+    }
+
+    #kecamatanInfo {
+        width: 70%;
+        position: static;
+        margin-left: 15%;
+        margin-top: 10px;
+    }
+
+    #kecamatanInfo.show p {
+        color: #fff !important;
+        margin-bottom: 2rem;
+        padding-bottom: 5%;
+    }
+
+    #kecamatanInfo h1 {
+        font-size: 26px;
+    }
+
+    #kecamatanInfo img {
+        width: 100%;
+        max-height: 320px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    #bandung-map {
+        margin-top: 10px;
+        width: 100%;
+        height: 40%;
+    }
+
+    #kecamatanInfo {
+        margin-top: 10px;
+    }
+
+    #kecamatanInfo.show p {
+        font-size: 14px;
+        padding-bottom: 5%;
+    }
+
+    #kecamatanInfo h1 {
+        font-size: 20px;
+    }
+}
